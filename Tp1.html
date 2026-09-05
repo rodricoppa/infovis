@@ -1,15 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Peliculas/Series vistas en Netflix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Películas y Series vistas en Netflix</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #111;
+    }
+    .chart-container {
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+  </style>
 </head>
 <body>
 
-  <div class="flourish-embed flourish-hierarchy" data-src="visualisation/30072499"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30072499/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
-  
-  <div style="min-height:738px" id="datawrapper-vis-d8OP1"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/d8OP1/embed.js" charset="utf-8" data-target="#datawrapper-vis-d8OP1"></script><noscript><img src="https://datawrapper.dwcdn.net/d8OP1/full.png" alt="¿Qué Serie vi más? ¿Y cuántos capítulos vi de cada serie? (Bar Chart)" /></noscript></div>
+  <h1>Visualización de Consumo en Netflix</h1>
+
+  <!-- Sección del gráfico de jerarquía (Flourish) -->
+  <div class="chart-container">
+    <h2>Jerarquía de Visualizaciones</h2>
+    <div class="flourish-embed flourish-hierarchy" data-src="visualisation/30072499">
+      <script src="https://public.flourish.studio/resources/embed.js" charset="utf-8"></script>
+      <noscript><img src="https://public.flourish.studio/visualisation/30072499/thumbnail" width="100%" alt="hierarchy visualization" /></noscript>
+    </div>
+  </div>
+
+  <!-- Sección del gráfico de Datawrapper -->
+  <div class="chart-container">
+    <h2>¿Qué Serie vi más?</h2>
+    <div style="min-height:738px" id="datawrapper-vis-d8OP1">
+      <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/d8OP1/embed.js" charset="utf-8" data-target="#datawrapper-vis-d8OP1"></script>
+      <noscript><img src="https://datawrapper.dwcdn.net/d8OP1/full.png" alt="¿Qué Serie vi más? ¿Y cuántos capítulos vi de cada serie? (Bar Chart)" /></noscript>
+    </div>
+  </div>
 
 </body>
 </html>
