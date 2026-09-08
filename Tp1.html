@@ -66,12 +66,14 @@
     </div>
   </div>
 
-  <!-- Gráfico SVG Interactivo con object -->
+  <!-- Gráfico SVG Interactivo con object corregido -->
   <div class="chart-container">
     <h2>¿Cómo es la distribución de mis Series y Temporadas favoritas?</h2>
-    <object data="viz.svg" type="image/svg+xml" style="width: 100%; height: auto;">
-      <img src="viz.svg" alt="Gráfico de distribución de series" />
-    </object>
+    <div style="width: 100%; overflow-x: auto; display: flex; justify-content: center;">
+      <object data="viz.svg" type="image/svg+xml" style="width: 100%; max-width: 900px; height: 600px;">
+        <img src="viz.svg" alt="Gráfico de distribución de series" />
+      </object>
+    </div>
   </div>
 
   <!-- SECCIÓN DE CONCLUSIÓN -->
